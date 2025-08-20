@@ -39,12 +39,12 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-  --color-orange-primary: #f97316;
-  --color-orange-dark: #ea580c;
-  --color-orange-light: #fed7aa;
-  --color-orange-accent: #fb923c;
-  --color-orange-600: #ea580c;
-  --color-orange-700: #c2410c;
+  --color-gold-primary: #D4AF37;
+  --color-gold-dark: #b8941f;
+  --color-gold-light: #F4E4BC;
+  --color-gold-accent: #ffd700;
+  --color-brown-primary: #3D2914;
+  --color-cream: #FAF7F0;
 }
 
 :root {
@@ -80,12 +80,12 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-  --orange-primary: #f97316;
-  --orange-dark: #ea580c;
-  --orange-light: #fed7aa;
-  --orange-accent: #fb923c;
-  --orange-600: #ea580c;
-  --orange-700: #c2410c;
+  --gold-primary: #D4AF37;
+  --gold-dark: #b8941f;
+  --gold-light: #F4E4BC;
+  --gold-accent: #ffd700;
+  --brown-primary: #3D2914;
+  --cream: #FAF7F0;
 }
 
 .dark {
@@ -131,102 +131,102 @@
   }
 }
 
-/* Custom Orange Catering brand colors */
-.bg-orange-primary {
-  background-color: var(--orange-primary);
+/* Custom Xzeron Catering brand colors */
+.bg-gold-primary {
+  background-color: var(--gold-primary);
 }
 
-.text-orange-primary {
-  color: var(--orange-primary);
+.text-gold-primary {
+  color: var(--gold-primary);
 }
 
-.border-orange-primary {
-  border-color: var(--orange-primary);
+.border-gold-primary {
+  border-color: var(--gold-primary);
 }
 
-.bg-orange-dark {
-  background-color: var(--orange-dark);
+.bg-gold-dark {
+  background-color: var(--gold-dark);
 }
 
-.text-orange-dark {
-  color: var(--orange-dark);
+.text-gold-dark {
+  color: var(--gold-dark);
 }
 
-.border-orange-dark {
-  border-color: var(--orange-dark);
+.border-gold-dark {
+  border-color: var(--gold-dark);
 }
 
-.bg-orange-light {
-  background-color: var(--orange-light);
+.bg-gold-light {
+  background-color: var(--gold-light);
 }
 
-.text-orange-light {
-  color: var(--orange-light);
+.text-gold-light {
+  color: var(--gold-light);
 }
 
-.border-orange-light {
-  border-color: var(--orange-light);
+.border-gold-light {
+  border-color: var(--gold-light);
 }
 
-.bg-orange-accent {
-  background-color: var(--orange-accent);
+.bg-gold-accent {
+  background-color: var(--gold-accent);
 }
 
-.text-orange-accent {
-  color: var(--orange-accent);
+.text-gold-accent {
+  color: var(--gold-accent);
 }
 
-.border-orange-accent {
-  border-color: var(--orange-accent);
+.border-gold-accent {
+  border-color: var(--gold-accent);
 }
 
-.bg-orange-600 {
-  background-color: var(--orange-600);
+.bg-brown-primary {
+  background-color: var(--brown-primary);
 }
 
-.text-orange-600 {
-  color: var(--orange-600);
+.text-brown-primary {
+  color: var(--brown-primary);
 }
 
-.border-orange-600 {
-  border-color: var(--orange-600);
+.border-brown-primary {
+  border-color: var(--brown-primary);
 }
 
-.bg-orange-700 {
-  background-color: var(--orange-700);
+.bg-cream {
+  background-color: var(--cream);
 }
 
-.text-orange-700 {
-  color: var(--orange-700);
+.text-cream {
+  color: var(--cream);
 }
 
-.border-orange-700 {
-  border-color: var(--orange-700);
+.border-cream {
+  border-color: var(--cream);
 }
 
 /* Legacy color support for backward compatibility */
 .bg-smdc-blue {
-  background-color: var(--orange-primary);
+  background-color: var(--gold-primary);
 }
 
 .text-smdc-blue {
-  color: var(--orange-primary);
+  color: var(--gold-primary);
 }
 
 .border-smdc-blue {
-  border-color: var(--orange-primary);
+  border-color: var(--gold-primary);
 }
 
-.bg-gold {
-  background-color: var(--orange-primary);
+.bg-orange {
+  background-color: var(--gold-primary);
 }
 
-.text-gold {
-  color: var(--orange-primary);
+.text-orange {
+  color: var(--gold-primary);
 }
 
-.border-gold {
-  border-color: var(--orange-primary);
+.border-orange {
+  border-color: var(--gold-primary);
 }
 
 /* Trust-focused enhancements */

@@ -1,135 +1,155 @@
 import React from 'react'
-import { Phone, Mail, MapPin, UtensilsCrossed } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, WhatsApp, Heart, ChefHat } from 'lucide-react'
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear()
+
   return (
-    <footer className="bg-gradient-to-r from-orange-700 to-orange-800 text-white py-12">
+    <footer className="bg-gradient-to-r from-gold-dark to-brown-primary text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
+          {/* Company Info */}
           <div className="col-span-2">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center">
-                <img 
-                  src="/xzeron-logo.png" 
-                  alt="Xzeron Catering Services Logo" 
-                  className="w-8 h-8"
-                />
+              <div className="w-12 h-12 bg-gold-accent rounded-lg flex items-center justify-center">
+                <ChefHat className="w-6 h-6 text-gold-dark" />
               </div>
               <div>
                 <h3 className="text-xl font-bold">Xzeron Catering Services</h3>
-                <p className="text-orange-200">"Delicious moments begins here"</p>
-                <p className="text-sm text-orange-100">Professional Catering Solutions</p>
+                <p className="text-gray-200">Delicious moments begins here</p>
+                <p className="text-sm text-gold-light">Complete & Customized Catering Solutions</p>
               </div>
             </div>
-            <p className="text-orange-200 mb-4">
-              Your trusted partner in creating unforgettable events. From weddings and debuts 
-              to kiddie parties and corporate events, we deliver delicious food, elegant setups, 
-              and professional service to make your celebration stress-free and memorable.
+            <p className="text-gray-200 mb-4 leading-relaxed">
+              Creating delicious moments, one celebration at a time. We provide complete and customized catering solutions 
+              for every occasion, from intimate family gatherings to grand celebrations. Our expert chefs bring years of 
+              professional experience to make your special day truly unforgettable.
             </p>
             <div className="flex space-x-4">
-              <a href="tel:+639668756031" className="text-orange-200 hover:text-white transition-colors">
+              <a href="#" className="text-gray-300 hover:text-white transition-colors">
                 <Phone className="w-5 h-5" />
               </a>
-              <a href="mailto:xzeroncatering@gmail.com" className="text-orange-200 hover:text-white transition-colors">
+              <a href="#" className="text-gray-300 hover:text-white transition-colors">
                 <Mail className="w-5 h-5" />
               </a>
-              <a href="#contact" className="text-orange-200 hover:text-white transition-colors">
+              <a href="#" className="text-gray-300 hover:text-white transition-colors">
                 <MapPin className="w-5 h-5" />
               </a>
             </div>
           </div>
           
+          {/* Quick Links */}
           <div>
-            <h4 className="font-semibold mb-4">Quick Links</h4>
+            <h4 className="font-semibold mb-4 text-gold-light">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#about" className="text-orange-200 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#services" className="text-orange-200 hover:text-white transition-colors">Services</a></li>
-              <li><a href="#menu" className="text-orange-200 hover:text-white transition-colors">Menu</a></li>
-              <li><a href="#gallery" className="text-orange-200 hover:text-white transition-colors">Gallery</a></li>
-              <li><a href="#testimonials" className="text-orange-200 hover:text-white transition-colors">Testimonials</a></li>
-              <li><a href="#contact" className="text-orange-200 hover:text-white transition-colors">Contact</a></li>
+              <li><a href="#about" className="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+              <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Our Services</a></li>
+              <li><a href="#menu" className="text-gray-300 hover:text-white transition-colors">Menu</a></li>
+              <li><a href="#gallery" className="text-gray-300 hover:text-white transition-colors">Gallery</a></li>
+              <li><a href="#testimonials" className="text-gray-300 hover:text-white transition-colors">Testimonials</a></li>
+              <li><a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+              <li><a href="#blog" className="text-gray-300 hover:text-white transition-colors">Blog</a></li>
+              <li><a href="#book" className="text-gray-300 hover:text-white transition-colors">Book Now</a></li>
             </ul>
           </div>
           
+          {/* Business Info */}
           <div>
-            <h4 className="font-semibold mb-4">Our Services</h4>
-            <ul className="space-y-2">
-              <li><a href="#services" className="text-orange-200 hover:text-white transition-colors">Weddings</a></li>
-              <li><a href="#services" className="text-orange-200 hover:text-white transition-colors">Debuts</a></li>
-              <li><a href="#services" className="text-orange-200 hover:text-white transition-colors">Kiddie Parties</a></li>
-              <li><a href="#services" className="text-orange-200 hover:text-white transition-colors">Corporate Events</a></li>
-              <li><a href="#services" className="text-orange-200 hover:text-white transition-colors">Birthdays</a></li>
-              <li><a href="#services" className="text-orange-200 hover:text-white transition-colors">House Blessings</a></li>
-            </ul>
+            <h4 className="font-semibold mb-4 text-gold-light">Business Information</h4>
+            <div className="space-y-3">
+              <div className="flex items-center space-x-2">
+                <Clock className="w-4 h-4 text-gold-accent" />
+                <span className="text-sm text-gray-300">Mon-Sun: 8AM-8PM</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <MapPin className="w-4 h-4 text-gold-accent" />
+                <span className="text-sm text-gray-300">Cavite & Metro Manila</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Phone className="w-4 h-4 text-gold-accent" />
+                <span className="text-sm text-gray-300">09668756031</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Mail className="w-4 h-4 text-gold-accent" />
+                <span className="text-sm text-gray-300">xzeroncatering@gmail.com</span>
+              </div>
+            </div>
+            
+            <h4 className="font-semibold mb-4 text-gold-light mt-6">Service Areas</h4>
+            <div className="text-sm text-gray-300 space-y-1">
+              <div>• Cavite (NAIC, Imus, Bacoor)</div>
+              <div>• Metro Manila</div>
+              <div>• Laguna</div>
+              <div>• Batangas</div>
+              <div>• And surrounding areas</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Social Media & Newsletter */}
+        <div className="border-t border-gold-primary/30 pt-8 mb-8">
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Social Media */}
+            <div>
+              <h4 className="font-semibold mb-4 text-gold-light">Connect With Us</h4>
+              <p className="text-gray-300 text-sm mb-4">
+                Follow us for daily updates, menu features, and behind-the-scenes content
+              </p>
+              <div className="flex space-x-4">
+                <a href="#" className="w-10 h-10 bg-gold-primary/20 rounded-full flex items-center justify-center hover:bg-gold-primary/30 transition-colors">
+                  <Facebook className="w-5 h-5 text-gold-accent" />
+                </a>
+                <a href="#" className="w-10 h-10 bg-gold-primary/20 rounded-full flex items-center justify-center hover:bg-gold-primary/30 transition-colors">
+                  <Instagram className="w-5 h-5 text-gold-accent" />
+                </a>
+                <a href="#" className="w-10 h-10 bg-gold-primary/20 rounded-full flex items-center justify-center hover:bg-gold-primary/30 transition-colors">
+                  <WhatsApp className="w-5 h-5 text-gold-accent" />
+                </a>
+              </div>
+            </div>
+
+            {/* Newsletter */}
+            <div>
+              <h4 className="font-semibold mb-4 text-gold-light">Stay Updated</h4>
+              <p className="text-gray-300 text-sm mb-4">
+                Subscribe to our newsletter for special offers and event planning tips
+              </p>
+              <div className="flex space-x-2">
+                <input 
+                  type="email" 
+                  placeholder="Enter your email" 
+                  className="flex-1 px-3 py-2 rounded-lg bg-white/10 border border-gold-primary/30 text-white placeholder-gray-300 focus:outline-none focus:border-gold-accent"
+                />
+                <button className="px-4 py-2 bg-gold-accent text-gold-dark rounded-lg font-semibold hover:bg-gold-primary transition-colors">
+                  Subscribe
+                </button>
+              </div>
+            </div>
           </div>
         </div>
         
-        <div className="border-t border-orange-600/30 pt-8">
+        {/* Bottom Footer */}
+        <div className="border-t border-gold-primary/30 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-orange-200 text-sm">
-              © 2024 Xzeron Catering Services. All rights reserved. | Professional Catering Services
-            </p>
-            <div className="flex items-center space-x-4 mt-4 md:mt-0">
-              <span className="text-sm text-orange-200">Licensed & Insured</span>
-              <span className="text-sm text-orange-200">|</span>
-              <span className="text-sm text-orange-200">5+ Years Experience</span>
+            <div className="text-center md:text-left mb-4 md:mb-0">
+              <p className="text-gray-300 text-sm">
+                © {currentYear} Xzeron Catering Services. All rights reserved. | Creating unforgettable culinary experiences in Cavite and beyond.
+              </p>
+            </div>
+            <div className="flex items-center space-x-4">
+              <span className="text-sm text-gray-300">Licensed & Professional</span>
+              <span className="text-sm text-gray-300">|</span>
+              <span className="text-sm text-gray-300">5+ Years Experience</span>
+              <span className="text-sm text-gray-300">|</span>
+              <span className="text-sm text-gray-300">100+ Events Catered</span>
             </div>
           </div>
         </div>
 
-        {/* Additional Info */}
-        <div className="mt-8 pt-8 border-t border-orange-600/30">
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div>
-              <h5 className="font-semibold mb-2">Business Hours</h5>
-              <p className="text-sm text-orange-200">
-                Monday - Saturday: 8:00 AM - 8:00 PM<br />
-                Sunday: By appointment only
-              </p>
-            </div>
-            <div>
-              <h5 className="font-semibold mb-2">Service Areas</h5>
-              <p className="text-sm text-orange-200">
-                Cavite, Manila, Makati, Taguig, Tagaytay<br />
-                And surrounding areas
-              </p>
-            </div>
-            <div>
-              <h5 className="font-semibold mb-2">Payment Methods</h5>
-              <p className="text-sm text-orange-200">
-                GCash, PayPal, Bank Transfer, Cash<br />
-                Flexible payment terms available
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Social Media & Contact */}
-        <div className="mt-8 pt-8 border-t border-orange-600/30 text-center">
-          <div className="flex justify-center space-x-6 mb-4">
-            <a 
-              href="https://www.facebook.com/share/1Jx6Xcku8t/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="bg-orange-600 hover:bg-orange-500 p-3 rounded-full transition-colors"
-            >
-              <span className="text-white font-bold">f</span>
-            </a>
-            <a 
-              href="tel:+639668756031"
-              className="bg-orange-600 hover:bg-orange-500 p-3 rounded-full transition-colors"
-            >
-              <Phone className="w-5 h-5 text-white" />
-            </a>
-            <a 
-              href="mailto:xzeroncatering@gmail.com"
-              className="bg-orange-600 hover:bg-orange-500 p-3 rounded-full transition-colors"
-            >
-              <Mail className="w-5 h-5 text-white" />
-            </a>
-          </div>
-          <p className="text-sm text-orange-200">
-            Follow us on social media for updates, special offers, and event inspiration!
+        {/* Made with Love */}
+        <div className="text-center mt-8 pt-4 border-t border-gold-primary/20">
+          <p className="text-gray-400 text-sm">
+            Made with <Heart className="w-4 h-4 text-gold-accent inline" /> for creating unforgettable celebrations
           </p>
         </div>
       </div>
