@@ -1,5 +1,5 @@
 import React from 'react'
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, WhatsApp, Heart, ChefHat } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, MessageSquare, Heart, ChefHat } from 'lucide-react'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -103,7 +103,7 @@ const Footer = () => {
                   <Instagram className="w-5 h-5 text-gold-accent" />
                 </a>
                 <a href="#" className="w-10 h-10 bg-gold-primary/20 rounded-full flex items-center justify-center hover:bg-gold-primary/30 transition-colors">
-                  <WhatsApp className="w-5 h-5 text-gold-accent" />
+                  <MessageSquare className="w-5 h-5 text-gold-accent" />
                 </a>
               </div>
             </div>

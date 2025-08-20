@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Button } from '@/components/ui/button.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
-import { Phone, Mail, MapPin, Clock, MessageCircle, Calendar, CheckCircle, Facebook, Instagram, WhatsApp, CreditCard, Banknote } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock, MessageCircle, Calendar, CheckCircle, Facebook, Instagram, MessageSquare, CreditCard, Banknote } from 'lucide-react'
 
 const Contact = () => {
   const [activeForm, setActiveForm] = useState('inquiry')
@@ -72,7 +72,7 @@ const Contact = () => {
   const socialMedia = [
     { name: "Facebook", icon: Facebook, link: "#", description: "Daily updates and menu features" },
     { name: "Instagram", icon: Instagram, link: "#", description: "Behind-the-scenes content" },
-    { name: "WhatsApp", icon: WhatsApp, link: "#", description: "Quick messaging and quotes" }
+    { name: "WhatsApp", icon: MessageSquare, link: "#", description: "Quick messaging and quotes" }
   ]
 
   return (
