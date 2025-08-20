@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="bg-gradient-to-r from-gold-dark to-brown-primary text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
-          {/* Company Info */}
+          {/* Column 1: Logo + Tagline */}
           <div className="col-span-2">
             <div className="flex items-center space-x-3 mb-4">
               <div className="w-12 h-12 bg-gold-accent rounded-lg flex items-center justify-center">
@@ -38,24 +38,24 @@ const Footer = () => {
             </div>
           </div>
           
-          {/* Quick Links */}
+          {/* Column 2: Quick Links */}
           <div>
             <h4 className="font-semibold mb-4 text-gold-light">Quick Links</h4>
             <ul className="space-y-2">
+              <li><a href="#home" className="text-gray-300 hover:text-white transition-colors">Home</a></li>
               <li><a href="#about" className="text-gray-300 hover:text-white transition-colors">About Us</a></li>
               <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Our Services</a></li>
               <li><a href="#menu" className="text-gray-300 hover:text-white transition-colors">Menu</a></li>
               <li><a href="#gallery" className="text-gray-300 hover:text-white transition-colors">Gallery</a></li>
               <li><a href="#testimonials" className="text-gray-300 hover:text-white transition-colors">Testimonials</a></li>
-              <li><a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact</a></li>
               <li><a href="#blog" className="text-gray-300 hover:text-white transition-colors">Blog</a></li>
-              <li><a href="#book" className="text-gray-300 hover:text-white transition-colors">Book Now</a></li>
+              <li><a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
           
-          {/* Business Info */}
+          {/* Column 3: Contact Info + Social Icons */}
           <div>
-            <h4 className="font-semibold mb-4 text-gold-light">Business Information</h4>
+            <h4 className="font-semibold mb-4 text-gold-light">Contact Information</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
                 <Clock className="w-4 h-4 text-gold-accent" />
@@ -75,39 +75,24 @@ const Footer = () => {
               </div>
             </div>
             
-            <h4 className="font-semibold mb-4 text-gold-light mt-6">Service Areas</h4>
-            <div className="text-sm text-gray-300 space-y-1">
-              <div>• Cavite (NAIC, Imus, Bacoor)</div>
-              <div>• Metro Manila</div>
-              <div>• Laguna</div>
-              <div>• Batangas</div>
-              <div>• And surrounding areas</div>
+            <h4 className="font-semibold mb-4 text-gold-light mt-6">Connect With Us</h4>
+            <div className="flex space-x-4">
+              <a href="#" className="w-10 h-10 bg-gold-primary/20 rounded-full flex items-center justify-center hover:bg-gold-primary/30 transition-colors">
+                <Facebook className="w-5 h-5 text-gold-accent" />
+              </a>
+              <a href="#" className="w-10 h-10 bg-gold-primary/20 rounded-full flex items-center justify-center hover:bg-gold-primary/30 transition-colors">
+                <Instagram className="w-5 h-5 text-gold-accent" />
+              </a>
+              <a href="#" className="w-10 h-10 bg-gold-primary/20 rounded-full flex items-center justify-center hover:bg-gold-primary/30 transition-colors">
+                <MessageSquare className="w-5 h-5 text-gold-accent" />
+              </a>
             </div>
           </div>
         </div>
 
-        {/* Social Media & Newsletter */}
+        {/* Newsletter Signup */}
         <div className="border-t border-gold-primary/30 pt-8 mb-8">
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Social Media */}
-            <div>
-              <h4 className="font-semibold mb-4 text-gold-light">Connect With Us</h4>
-              <p className="text-gray-300 text-sm mb-4">
-                Follow us for daily updates, menu features, and behind-the-scenes content
-              </p>
-              <div className="flex space-x-4">
-                <a href="#" className="w-10 h-10 bg-gold-primary/20 rounded-full flex items-center justify-center hover:bg-gold-primary/30 transition-colors">
-                  <Facebook className="w-5 h-5 text-gold-accent" />
-                </a>
-                <a href="#" className="w-10 h-10 bg-gold-primary/20 rounded-full flex items-center justify-center hover:bg-gold-primary/30 transition-colors">
-                  <Instagram className="w-5 h-5 text-gold-accent" />
-                </a>
-                <a href="#" className="w-10 h-10 bg-gold-primary/20 rounded-full flex items-center justify-center hover:bg-gold-primary/30 transition-colors">
-                  <MessageSquare className="w-5 h-5 text-gold-accent" />
-                </a>
-              </div>
-            </div>
-
             {/* Newsletter */}
             <div>
               <h4 className="font-semibold mb-4 text-gold-light">Stay Updated</h4>
