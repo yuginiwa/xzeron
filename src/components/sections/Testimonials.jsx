@@ -72,7 +72,7 @@ const Testimonials = () => {
           {/* Navigation Arrows */}
           <button
             onClick={prevTestimonial}
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-12 w-12 h-12 bg-white border border-gold-light rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:border-gold-primary z-10"
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-12 w-12 h-12 bg-white border border-gold-light rounded-full hidden md:flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:border-gold-primary z-10"
             aria-label="Previous testimonial"
           >
             <ChevronLeft className="w-6 h-6 text-gold-primary" />
@@ -80,7 +80,7 @@ const Testimonials = () => {
 
           <button
             onClick={nextTestimonial}
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-12 w-12 h-12 bg-white border border-gold-light rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:border-gold-primary z-10"
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-12 w-12 h-12 bg-white border border-gold-light rounded-full hidden md:flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:border-gold-primary z-10"
             aria-label="Next testimonial"
           >
             <ChevronRight className="w-6 h-6 text-gold-primary" />

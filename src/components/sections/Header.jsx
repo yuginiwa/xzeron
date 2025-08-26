@@ -1,19 +1,20 @@
 import React, { useState } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { Menu, X } from 'lucide-react'
+import { NavHashLink } from 'react-router-hash-link'
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const navigationItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Menu', href: '#menu' },
-    { name: 'Gallery', href: '#gallery' },
-    { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Blog', href: '#blog' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/#about' },
+    { name: 'Services', href: '/#services' },
+    { name: 'Menu', href: '/menu' },
+    { name: 'Gallery', href: '/#gallery' },
+    { name: 'Testimonials', href: '/#testimonials' },
+    { name: 'Blog', href: '/#blog' },
+    { name: 'Contact', href: '/#contact' }
   ]
 
   return (
@@ -38,13 +39,14 @@ const Header = () => {
           {/* Center: Primary Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
             {navigationItems.map((item) => (
-              <a 
+              <NavHashLink 
                 key={item.name}
-                href={item.href} 
+                to={item.href} 
+                smooth
                 className="text-gray-900 hover:text-gold-primary transition-colors font-medium text-sm"
               >
                 {item.name}
-              </a>
+              </NavHashLink>
             ))}
           </nav>
 
@@ -70,14 +72,15 @@ const Header = () => {
           <nav className="lg:hidden py-4 border-t">
             <div className="flex flex-col space-y-4">
               {navigationItems.map((item) => (
-                <a 
+                <NavHashLink 
                   key={item.name}
-                  href={item.href} 
+                  to={item.href} 
+                  smooth
                   className="text-gray-900 hover:text-gold-primary transition-colors font-medium"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.name}
-                </a>
+                </NavHashLink>
               ))}
               <div className="pt-4">
                 <Button className="w-full bg-gradient-to-r from-gold-primary to-gold-dark hover:from-gold-dark hover:to-brown-primary text-brown-primary">

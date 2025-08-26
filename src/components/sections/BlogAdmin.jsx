@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { supabase } from '@/lib/supabaseClient';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -75,9 +75,11 @@ const BlogAdmin = () => {
     const postData = { ...post, image: imageUrls };
 
     if (editing) {
+      // eslint-disable-next-line no-unused-vars
       const { data, error } = await supabase.from('blogs').update(postData).eq('id', post.id).select();
       if (error) console.log('Error updating post: ', error);
     } else {
+      // eslint-disable-next-line no-unused-vars
       const { data, error } = await supabase.from('blogs').insert([postData]).select();
       if (error) console.log('Error adding post: ', error);
     }
@@ -108,17 +110,38 @@ const BlogAdmin = () => {
       <form onSubmit={handleSubmit} className="mb-8">
         <h2 className="text-xl font-bold mb-2">{editing ? 'Edit Post' : 'Add New Post'}</h2>
         <div className="grid grid-cols-1 gap-4">
-          <Input name="title" placeholder="Title" value={post.title} onChange={handleInputChange} />
-          <Input name="excerpt" placeholder="Excerpt" value={post.excerpt} onChange={handleInputChange} />
+          <div>
+            <label htmlFor="title" className="sr-only">Title</label>
+            <Input id="title" name="title" placeholder="Title" value={post.title} onChange={handleInputChange} />
+          </div>
+          <div>
+            <label htmlFor="excerpt" className="sr-only">Excerpt</label>
+            <Input id="excerpt" name="excerpt" placeholder="Excerpt" value={post.excerpt} onChange={handleInputChange} />
+          </div>
           <div className="border rounded-md">
             <MenuBar editor={editor} />
             <EditorContent editor={editor} className="p-2" />
           </div>
-          <Input type="file" name="image" multiple accept="image/*" onChange={handleFileChange} />
-          <Input name="category" placeholder="Category" value={post.category} onChange={handleInputChange} />
-          <Input name="readTime" placeholder="Read Time" value={post.readTime} onChange={handleInputChange} />
-          <Input name="author" placeholder="Author" value={post.author} onChange={handleInputChange} />
-          <Input name="date" placeholder="Date" value={post.date} onChange={handleInputChange} />
+          <div>
+            <label htmlFor="image" className="sr-only">Image</label>
+            <Input id="image" type="file" name="image" multiple accept="image/*" onChange={handleFileChange} />
+          </div>
+          <div>
+            <label htmlFor="category" className="sr-only">Category</label>
+            <Input id="category" name="category" placeholder="Category" value={post.category} onChange={handleInputChange} />
+          </div>
+          <div>
+            <label htmlFor="readTime" className="sr-only">Read Time</label>
+            <Input id="readTime" name="readTime" placeholder="Read Time" value={post.readTime} onChange={handleInputChange} />
+          </div>
+          <div>
+            <label htmlFor="author" className="sr-only">Author</label>
+            <Input id="author" name="author" placeholder="Author" value={post.author} onChange={handleInputChange} />
+          </div>
+          <div>
+            <label htmlFor="date" className="sr-only">Date</label>
+            <Input id="date" name="date" placeholder="Date" value={post.date} onChange={handleInputChange} />
+          </div>
         </div>
         <Button type="submit" className="mt-4" disabled={uploading}>{uploading ? 'Uploading...' : (editing ? 'Update Post' : 'Add Post')}</Button>
         {editing && <Button onClick={() => { setEditing(false); setPost({ title: '', excerpt: '', body: '', image: [], category: '', readTime: '', author: '', date: '' }); editor.commands.clearContent(); }} className="mt-4 ml-2">Cancel</Button>}

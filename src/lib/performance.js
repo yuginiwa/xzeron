@@ -35,7 +35,7 @@ export const optimizeImages = () => {
 };
 
 // Lazy loading for components
-export const lazyLoadComponent = (component, loadingComponent) => {
+export const lazyLoadComponent = (component) => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(component);
@@ -188,10 +188,10 @@ export const initPerformanceMonitoring = () => {
   inlineCriticalCSS();
   
   // Register service worker
-  registerServiceWorker();
+  // registerServiceWorker();
   
   // Create performance dashboard (development only)
-  if (process.env.NODE_ENV === 'development') {
+  if (import.meta.env.MODE === 'development') {
     const dashboard = createPerformanceDashboard();
     
     // Simulate metrics for development

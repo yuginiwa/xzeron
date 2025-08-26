@@ -302,7 +302,7 @@ export const initAccessibility = () => {
   forms.forEach(enhanceFormAccessibility);
   
   // Run accessibility audit in development
-  if (process.env.NODE_ENV === 'development') {
+  if (import.meta.env.MODE === 'development') {
     setTimeout(() => {
       const issues = runAccessibilityAudit();
       if (issues.length > 0) {

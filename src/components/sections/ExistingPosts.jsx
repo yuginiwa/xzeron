@@ -49,17 +49,25 @@ const ExistingPosts = () => {
     <div className="p-8">
       <h1 className="text-2xl font-bold mb-4">Existing Posts</h1>
       <div className="flex items-center mb-4">
-        <Input
-          placeholder="Search by title..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="mr-4"
-        />
-        <Input
-          type="date"
-          value={date}
-          onChange={(e) => setDate(e.target.value)}
-        />
+        <div>
+          <label htmlFor="search-posts" className="sr-only">Search by title</label>
+          <Input
+            id="search-posts"
+            placeholder="Search by title..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="mr-4"
+          />
+        </div>
+        <div>
+          <label htmlFor="date-filter" className="sr-only">Filter by date</label>
+          <Input
+            id="date-filter"
+            type="date"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+          />
+        </div>
       </div>
       <table className="min-w-full bg-white">
         <thead>

@@ -69,7 +69,7 @@ const Gallery = () => {
 
         {/* Alternating Two-Column Layout */}
         <div className="space-y-20">
-          {packages.map((pkg, index) => (
+          {packages.map((pkg) => (
             <div key={pkg.id} className={`grid lg:grid-cols-2 gap-12 items-center ${
               pkg.imageFirst ? 'lg:grid-flow-col-dense' : ''
             }`}>
