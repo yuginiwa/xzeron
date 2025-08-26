@@ -8,7 +8,7 @@ const Header = () => {
 
   const navigationItems = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/#about' },
+    { name: 'About', href: '/about' },
     { name: 'Services', href: '/#services' },
     { name: 'Menu', href: '/menu' },
     { name: 'Gallery', href: '/#gallery' },
@@ -52,8 +52,10 @@ const Header = () => {
 
           {/* Right: Book Now Button */}
           <div className="hidden lg:block">
-            <Button className="bg-gradient-to-r from-gold-primary to-gold-dark hover:from-gold-dark hover:to-brown-primary text-brown-primary px-6 py-2">
-              Book Now
+            <Button asChild className="bg-gradient-to-r from-gold-primary to-gold-dark hover:from-gold-dark hover:to-brown-primary text-brown-primary px-6 py-2">
+              <NavHashLink to="/#contact" smooth>
+                Book Now
+              </NavHashLink>
             </Button>
           </div>
 
@@ -83,8 +85,10 @@ const Header = () => {
                 </NavHashLink>
               ))}
               <div className="pt-4">
-                <Button className="w-full bg-gradient-to-r from-gold-primary to-gold-dark hover:from-gold-dark hover:to-brown-primary text-brown-primary">
-                  Book Now
+                <Button asChild className="w-full bg-gradient-to-r from-gold-primary to-gold-dark hover:from-gold-dark hover:to-brown-primary text-brown-primary">
+                  <NavHashLink to="/#contact" smooth onClick={() => setIsMobileMenuOpen(false)}>
+                    Book Now
+                  </NavHashLink>
                 </Button>
               </div>
             </div>

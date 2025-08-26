@@ -7,7 +7,7 @@ import {
 import Header from './components/sections/Header';
 import Hero from './components/sections/Hero';
 import Services from './components/sections/Services';
-import About from './components/sections/About';
+
 import BestSellers from './components/sections/BestSellers';
 import Gallery from './components/sections/Gallery';
 import GalleryTeaser from './components/sections/GalleryTeaser';
@@ -20,6 +20,7 @@ import Login from './components/sections/Login';
 import ProtectedRoute from './components/ProtectedRoute';
 import ExistingPosts from './components/sections/ExistingPosts';
 import MenuPage from './components/pages/MenuPage';
+import AboutPage from './components/pages/AboutPage';
 import './App.css';
 
 const MainLayout = ({ children }) => (
@@ -34,7 +35,7 @@ const Home = () => (
   <>
     <Hero />
     <Services />
-    <About />
+    
     <BestSellers />
     <Gallery />
     <GalleryTeaser />
@@ -50,6 +51,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainLayout><Home /></MainLayout>} />
         <Route path="/menu" element={<MainLayout><MenuPage /></MainLayout>} />
+        <Route path="/about" element={<MainLayout><AboutPage /></MainLayout>} />
         <Route path="/login" element={<Login />} />
         <Route path="/blog-admin" element={<ProtectedRoute><BlogAdmin /></ProtectedRoute>} />
         <Route path="/blog-admin/posts" element={<ProtectedRoute><ExistingPosts /></ProtectedRoute>} />
