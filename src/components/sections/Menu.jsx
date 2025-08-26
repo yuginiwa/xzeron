@@ -8,7 +8,7 @@ const Menu = () => {
       id: 1,
       name: "Crispy Lumpia",
       price: "₱150",
-      image: "🍱",
+      image: "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       description: "Fresh spring rolls with ground pork and vegetables",
       featured: true
     },
@@ -16,7 +16,7 @@ const Menu = () => {
       id: 2,
       name: "Sinigang na Baboy",
       price: "₱350",
-      image: "🍲",
+      image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       description: "Traditional sour soup with pork and vegetables",
       featured: false
     },
@@ -24,7 +24,7 @@ const Menu = () => {
       id: 3,
       name: "Lechon Kawali",
       price: "₱450",
-      image: "🍖",
+      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       description: "Crispy fried pork belly with lechon sauce",
       featured: true
     },
@@ -32,7 +32,7 @@ const Menu = () => {
       id: 4,
       name: "Leche Flan",
       price: "₱150",
-      image: "🍮",
+      image: "https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       description: "Smooth caramel custard with rich caramel sauce",
       featured: false
     }
@@ -58,10 +58,12 @@ const Menu = () => {
               }`}
             >
               {/* Dish Image */}
-              <div className="relative h-48 bg-gradient-to-br from-gold-light to-cream flex items-center justify-center">
-                <div className="text-6xl group-hover:scale-110 transition-transform duration-300">
-                  {dish.image}
-                </div>
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={dish.image} 
+                  alt={dish.name}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
                 {dish.featured && (
                   <div className="absolute top-2 right-2 bg-gold-primary text-white text-xs px-2 py-1 rounded-full flex items-center">
                     <Star className="w-3 h-3 mr-1 fill-current" />

@@ -8,42 +8,42 @@ const GalleryTeaser = () => {
       id: 1,
       title: "Elegant Wedding Setup",
       category: "Event Setups",
-      image: "💒",
+      image: "https://images.pexels.com/photos/1691932/pexels-photo-1691932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       featured: true
     },
     {
       id: 2,
       title: "Gourmet Food Presentation",
       category: "Food Presentations",
-      image: "🍽️",
+      image: "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       featured: false
     },
     {
       id: 3,
       title: "Debut Celebration",
       category: "Event Setups",
-      image: "👑",
+      image: "https://images.pexels.com/photos/1691932/pexels-photo-1691932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       featured: false
     },
     {
       id: 4,
       title: "Behind the Scenes",
       category: "Kitchen",
-      image: "👨‍🍳",
+      image: "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       featured: false
     },
     {
       id: 5,
       title: "Kiddie Party Setup",
       category: "Event Setups",
-      image: "🎂",
+      image: "https://images.pexels.com/photos/1691932/pexels-photo-1691932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       featured: false
     },
     {
       id: 6,
       title: "Corporate Event",
       category: "Event Setups",
-      image: "🏢",
+      image: "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       featured: false
     }
   ]
@@ -67,14 +67,14 @@ const GalleryTeaser = () => {
                 index === 0 ? 'row-span-2 col-span-2 md:col-span-1' : ''
               } ${index === 3 ? 'row-span-2' : ''}`}
             >
-              <div className={`w-full bg-gradient-to-br from-gold-light to-cream rounded-xl shadow-lg overflow-hidden ${
+              <div className={`w-full rounded-xl shadow-lg overflow-hidden ${
                 index === 0 ? 'h-80' : index === 3 ? 'h-80' : 'h-40'
               }`}>
-                <div className="w-full h-full flex items-center justify-center">
-                  <div className="text-6xl group-hover:scale-110 transition-transform duration-300">
-                    {item.image}
-                  </div>
-                </div>
+                <img 
+                  src={item.image} 
+                  alt={item.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
                 
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">

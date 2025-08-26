@@ -31,7 +31,7 @@ const Header = () => {
             </div>
             <div className="ml-3">
               <h1 className="text-lg font-bold text-brown-primary">Xzeron</h1>
-              <p className="text-xs text-gray-600">Catering Services</p>
+              <p className="text-xs text-gray-800">Catering Services</p>
             </div>
           </div>
           
@@ -41,7 +41,7 @@ const Header = () => {
               <a 
                 key={item.name}
                 href={item.href} 
-                className="text-gray-700 hover:text-gold-primary transition-colors font-medium text-sm"
+                className="text-gray-900 hover:text-gold-primary transition-colors font-medium text-sm"
               >
                 {item.name}
               </a>
@@ -50,7 +50,7 @@ const Header = () => {
 
           {/* Right: Book Now Button */}
           <div className="hidden lg:block">
-            <Button className="bg-gradient-to-r from-gold-primary to-gold-dark hover:from-gold-dark hover:to-brown-primary text-white px-6 py-2">
+            <Button className="bg-gradient-to-r from-gold-primary to-gold-dark hover:from-gold-dark hover:to-brown-primary text-brown-primary px-6 py-2">
               Book Now
             </Button>
           </div>
@@ -73,14 +73,14 @@ const Header = () => {
                 <a 
                   key={item.name}
                   href={item.href} 
-                  className="text-gray-700 hover:text-gold-primary transition-colors font-medium"
+                  className="text-gray-900 hover:text-gold-primary transition-colors font-medium"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.name}
                 </a>
               ))}
               <div className="pt-4">
-                <Button className="w-full bg-gradient-to-r from-gold-primary to-gold-dark hover:from-gold-dark hover:to-brown-primary text-white">
+                <Button className="w-full bg-gradient-to-r from-gold-primary to-gold-dark hover:from-gold-dark hover:to-brown-primary text-brown-primary">
                   Book Now
                 </Button>
               </div>

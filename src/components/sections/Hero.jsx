@@ -7,34 +7,32 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <div className="w-full h-full bg-gradient-to-br from-gold-light/20 to-cream/80">
-          {/* Placeholder for high-res plated signature dish photo */}
-          <div className="w-full h-full bg-gradient-to-br from-gold-primary/10 to-brown-primary/10 flex items-center justify-center">
-            <div className="text-center text-gold-primary/30">
-              <div className="text-8xl mb-4">🍽️</div>
-              <p className="text-xl">High-res plated signature dish photo</p>
-              <p className="text-sm">(Replace with actual image)</p>
-            </div>
-          </div>
+          {/* High-res plated signature dish photo */}
+          <img 
+            src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+            alt="Beautifully plated signature dish"
+            className="w-full h-full object-cover"
+          />
         </div>
         {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
       </div>
 
       {/* Centered Overlay Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
           Delicious Moments
-          <span className="block text-gold-accent">Begin Here</span>
+          <span className="block text-white">Begin Here</span>
         </h1>
         
-        <p className="text-xl md:text-2xl lg:text-3xl mb-8 text-gray-100 leading-relaxed max-w-3xl mx-auto">
+        <p className="text-xl md:text-2xl lg:text-3xl mb-8 text-gray-200 leading-relaxed max-w-3xl mx-auto">
           Complete catering solutions for every celebration
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button 
             size="lg" 
-            className="bg-gradient-to-r from-gold-primary to-gold-dark hover:from-gold-dark hover:to-brown-primary text-white text-lg px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+            className="bg-gradient-to-r from-gold-primary to-gold-dark hover:from-gold-dark hover:to-brown-primary text-brown-primary text-lg px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
           >
             Get Your Free Quote
           </Button>

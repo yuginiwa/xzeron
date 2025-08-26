@@ -1,40 +1,43 @@
-import React from 'react'
-import { Button } from '@/components/ui/button.jsx'
-import { ArrowRight, Calendar, Clock, User } from 'lucide-react'
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { Button } from '@/components/ui/button.jsx';
+import { ArrowRight, Calendar, Clock, User } from 'lucide-react';
+import { supabase } from '@/lib/supabaseClient';
 
 const Blog = () => {
-  const blogPosts = [
-    {
-      id: 1,
-      title: "The Secret to Perfect Event Planning: A Caterer's Guide",
-      excerpt: "Discover the essential steps and insider tips that professional caterers use to ensure every event runs smoothly and exceeds expectations.",
-      image: "📋",
-      category: "Event Planning",
-      readTime: "5 min read",
-      author: "Chef Xzeron",
-      date: "Dec 15, 2024"
-    },
-    {
-      id: 2,
-      title: "Seasonal Menu Inspirations: What's Fresh This Month",
-      excerpt: "Explore our curated seasonal menus featuring the freshest local ingredients and innovative flavor combinations that will delight your guests.",
-      image: "🍃",
-      category: "Menu Ideas",
-      readTime: "4 min read",
-      author: "Chef Xzeron",
-      date: "Dec 10, 2024"
-    },
-    {
-      id: 3,
-      title: "Behind the Recipe: The Story of Our Signature Dishes",
-      excerpt: "Learn the fascinating history and inspiration behind our most beloved dishes, from traditional family recipes to modern culinary innovations.",
-      image: "👨‍🍳",
-      category: "Behind the Scenes",
-      readTime: "6 min read",
-      author: "Chef Xzeron",
-      date: "Dec 5, 2024"
+  const [blogPosts, setBlogPosts] = useState([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(null)
+
+  useEffect(() => {
+    const fetchBlogPosts = async () => {
+      try {
+        const { data, error } = await supabase
+          .from('blogs')
+          .select('*')
+          .eq('is_deleted', false)
+        
+        if (error) {
+          throw error
+        }
+        setBlogPosts(data)
+      } catch (error) {
+        setError(error.message)
+      } finally {
+        setLoading(false)
+      }
     }
-  ]
+
+    fetchBlogPosts()
+  }, [])
+
+  if (loading) {
+    return <div>Loading...</div>
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>
+  }
 
   return (
     <section id="blog" className="py-20 bg-gray-50">
@@ -54,10 +57,12 @@ const Blog = () => {
               className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer"
             >
               {/* Post Image */}
-              <div className="h-48 bg-gradient-to-br from-gold-light to-cream flex items-center justify-center">
-                <div className="text-6xl group-hover:scale-110 transition-transform duration-300">
-                  {post.image}
-                </div>
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={post.image && post.image.length > 0 ? post.image[0] : ''} 
+                  alt={post.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
               </div>
 
               {/* Post Content */}
@@ -78,10 +83,8 @@ const Blog = () => {
                   {post.title}
                 </h3>
 
-                {/* Excerpt */}
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  {post.excerpt}
-                </p>
+                {/* Body */}
+                <div dangerouslySetInnerHTML={{ __html: post.body }} />
 
                 {/* Author & Date */}
                 <div className="flex items-center justify-between text-xs text-gray-500">
@@ -99,7 +102,6 @@ const Blog = () => {
           ))}
         </div>
 
-        {/* Read Our Blog Link */}
         <div className="text-center">
           <Button 
             size="lg"

@@ -17,7 +17,7 @@ const Gallery = () => {
         "Coordination with your other wedding vendors"
       ],
       icon: Heart,
-      image: "💒",
+      image: "https://mdzljfhbkaxrhahqhmzz.supabase.co/storage/v1/object/sign/xzeron_data/pexels-asadphoto-169190.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MWZhM2E2OS1kODc3LTRlYTctYWRkYy1hN2E3Y2ZmM2YxNzAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ4emVyb25fZGF0YS9wZXhlbHMtYXNhZHBob3RvLTE2OTE5MC5qcGciLCJpYXQiOjE3NTYyMDM2NDksImV4cCI6MzE1NTMyNDY2NzY0OX0.lsXDtxGHNf09wtX5k-1dq9e-qjZXKF0iHjLw8Hdsll8",
       cta: "Get Wedding Quote",
       imageFirst: false
     },
@@ -34,7 +34,7 @@ const Gallery = () => {
         "Custom decoration options"
       ],
       icon: Crown,
-      image: "👑",
+      image: "https://mdzljfhbkaxrhahqhmzz.supabase.co/storage/v1/object/sign/xzeron_data/pexels-bertellifotografia-16120159.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MWZhM2E2OS1kODc3LTRlYTctYWRkYy1hN2E3Y2ZmM2YxNzAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ4emVyb25fZGF0YS9wZXhlbHMtYmVydGVsbGlmb3RvZ3JhZmlhLTE2MTIwMTU5LmpwZyIsImlhdCI6MTc1NjIwMzY3NSwiZXhwIjo4ODE1NjExNzI3NX0.-AKzD2HvedURXfkNJV1afgiJFDHF7suLiUoYRRlu1Dw",
       cta: "Get Debut Quote",
       imageFirst: true
     },
@@ -51,7 +51,7 @@ const Gallery = () => {
         "Complete party coordination"
       ],
       icon: Cake,
-      image: "🎂",
+      image: "https://mdzljfhbkaxrhahqhmzz.supabase.co/storage/v1/object/sign/xzeron_data/pexels-vidalbalielojrfotografia-14457444.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MWZhM2E2OS1kODc3LTRlYTctYWRkYy1hN2E3Y2ZmM2YxNzAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ4emVyb25fZGF0YS9wZXhlbHMtdmlkYWxiYWxpZWxvanJmb3RvZ3JhZmlhLTE0NDU3NDQ0LmpwZyIsImlhdCI6MTc1NjIwMzQ4MiwiZXhwIjozMTUzNzcyNDY2NzQ4Mn0.QVn-8DnhJrautkr0pLycySzumu5zLYZfF6pksUkuMNs",
       cta: "Get Kiddie Quote",
       imageFirst: false
     }
@@ -77,8 +77,12 @@ const Gallery = () => {
               {/* Image Column */}
               <div className={`${pkg.imageFirst ? 'lg:col-start-2' : ''}`}>
                 <div className="relative">
-                  <div className="w-full h-80 bg-gradient-to-br from-gold-light to-cream rounded-2xl flex items-center justify-center shadow-xl">
-                    <div className="text-8xl">{pkg.image}</div>
+                  <div className="w-full h-80 overflow-hidden rounded-2xl shadow-xl">
+                    <img 
+                      src={pkg.image} 
+                      alt={pkg.title}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div className="absolute -bottom-4 -right-4 bg-white p-4 rounded-xl shadow-lg border border-gold-light">
                     <div className="flex items-center space-x-2">

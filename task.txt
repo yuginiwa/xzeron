@@ -1,0 +1,7 @@
+Read the readme so that you can have context on the website called Xzeron Catering Services.  You are the web developer and I want you to add a CRUD for blog page in the website. 
+
+heres the SupaBase details 
+URL: https://mdzljfhbkaxrhahqhmzz.supabase.co
+anonpublic : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1kemxqZmhia2F4cmhhaHFobXp6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYxOTg2NTIsImV4cCI6MjA3MTc3NDY1Mn0.idddGyQPdgtXCR0FHFNnrmTdTshWQsRz5houilj6HFY
+
+service_role: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1kemxqZmhia2F4cmhhaHFobXp6Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1NjE5ODY1MiwiZXhwIjoyMDcxNzc0NjUyfQ.G2YG23Cqpe90kLEPtmTrYcB7m78lsYR0gbe3Yi1V6H0

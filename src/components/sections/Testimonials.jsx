@@ -10,7 +10,7 @@ const Testimonials = () => {
       location: "Cavite",
       content: "Xzeron Catering made our wedding day absolutely perfect! The food was exceptional, the service was impeccable, and the setup was elegant. Our guests couldn't stop raving about the delicious cuisine. Thank you for making our special day truly unforgettable!",
       rating: 5,
-      portrait: "👰"
+      portrait: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ const Testimonials = () => {
       location: "Manila",
       content: "Our daughter's debut celebration was a huge success thanks to Xzeron Catering. The sophisticated menu and elegant presentation exceeded our expectations. The team was professional, punctual, and made everything stress-free. Highly recommended!",
       rating: 5,
-      portrait: "👑"
+      portrait: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ const Testimonials = () => {
       location: "Taguig",
       content: "The kiddie party package was perfect! The kids loved the colorful food presentations and fun serving styles. Parents appreciated the quality and variety. Everything was organized beautifully and the cleanup was thorough. Will definitely book again!",
       rating: 5,
-      portrait: "🎂"
+      portrait: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
       id: 4,
@@ -37,7 +37,7 @@ const Testimonials = () => {
       location: "Makati",
       content: "Professional service from start to finish. Our corporate event was catered flawlessly with business-appropriate menus that impressed our clients. The setup was efficient and the food quality was outstanding. Excellent value for money.",
       rating: 5,
-      portrait: "🏢"
+      portrait: "https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     }
   ]
 
@@ -107,8 +107,12 @@ const Testimonials = () => {
             {/* Client Info */}
             <div className="flex items-center justify-center space-x-4">
               {/* Portrait */}
-              <div className="w-16 h-16 bg-gradient-to-br from-gold-primary to-gold-dark rounded-full flex items-center justify-center text-2xl text-white">
-                {currentTestimonial.portrait}
+              <div className="w-16 h-16 bg-gradient-to-br from-gold-primary to-gold-dark rounded-full flex items-center justify-center overflow-hidden">
+                <img 
+                  src={currentTestimonial.portrait} 
+                  alt={currentTestimonial.name}
+                  className="w-full h-full object-cover"
+                />
               </div>
               
               {/* Client Details */}

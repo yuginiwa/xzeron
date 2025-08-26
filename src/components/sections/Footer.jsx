@@ -5,22 +5,22 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-gradient-to-r from-gold-dark to-brown-primary text-white py-12">
+    <footer className="bg-gradient-to-r from-brown-primary to-gold-dark text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Column 1: Logo + Tagline */}
           <div className="col-span-2">
             <div className="flex items-center space-x-3 mb-4">
               <div className="w-12 h-12 bg-gold-accent rounded-lg flex items-center justify-center">
-                <ChefHat className="w-6 h-6 text-gold-dark" />
+                <ChefHat className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-bold">Xzeron Catering Services</h3>
-                <p className="text-gray-200">Delicious moments begins here</p>
+                <h3 className="text-xl font-bold text-white">Xzeron Catering Services</h3>
+                <p className="text-gray-300">Delicious moments begins here</p>
                 <p className="text-sm text-gold-light">Complete & Customized Catering Solutions</p>
               </div>
             </div>
-            <p className="text-gray-200 mb-4 leading-relaxed">
+            <p className="text-gray-300 mb-4 leading-relaxed">
               Creating delicious moments, one celebration at a time. We provide complete and customized catering solutions 
               for every occasion, from intimate family gatherings to grand celebrations. Our expert chefs bring years of 
               professional experience to make your special day truly unforgettable.
@@ -80,7 +80,7 @@ const Footer = () => {
               <a href="#" className="w-10 h-10 bg-gold-primary/20 rounded-full flex items-center justify-center hover:bg-gold-primary/30 transition-colors">
                 <Facebook className="w-5 h-5 text-gold-accent" />
               </a>
-              <a href="#" className="w-10 h-10 bg-gold-primary/20 rounded-full flex items-center justify-center hover:bg-gold-primary/30 transition-colors">
+              <a href="#" className="w-10 h-10 bg-gold-primary/20 rounded-full flex items-center justify-center hover:bg-gold-primary/30 transition-.colors">
                 <Instagram className="w-5 h-5 text-gold-accent" />
               </a>
               <a href="#" className="w-10 h-10 bg-gold-primary/20 rounded-full flex items-center justify-center hover:bg-gold-primary/30 transition-colors">
@@ -103,9 +103,10 @@ const Footer = () => {
                 <input 
                   type="email" 
                   placeholder="Enter your email" 
+                  aria-label="Email for newsletter subscription"
                   className="flex-1 px-3 py-2 rounded-lg bg-white/10 border border-gold-primary/30 text-white placeholder-gray-300 focus:outline-none focus:border-gold-accent"
                 />
-                <button className="px-4 py-2 bg-gold-accent text-gold-dark rounded-lg font-semibold hover:bg-gold-primary transition-colors">
+                <button className="px-4 py-2 bg-gold-accent text-brown-primary rounded-lg font-semibold hover:bg-gold-primary transition-colors">
                   Subscribe
                 </button>
               </div>
