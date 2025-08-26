@@ -9,7 +9,7 @@ const BestSellers = () => {
       id: 1,
       name: "Crispy Lumpia",
       price: "₱150",
-      image: "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "https://mdzljfhbkaxrhahqhmzz.supabase.co/storage/v1/object/sign/xzeron_data/Lumpia.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MWZhM2E2OS1kODc3LTRlYTctYWRkYy1hN2E3Y2ZmM2YxNzAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ4emVyb25fZGF0YS9MdW1waWEucG5nIiwiaWF0IjoxNzU2MjExODI3LCJleHAiOjMxNzA4NDY3NTgyN30.B7a6EkKUbXcanyNPKORnO6Hqr8-yS4J-e7LZsJFgIvU",
       description: "Fresh spring rolls with ground pork and vegetables",
       featured: true
     },
@@ -17,7 +17,7 @@ const BestSellers = () => {
       id: 2,
       name: "Sinigang na Baboy",
       price: "₱350",
-      image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "https://mdzljfhbkaxrhahqhmzz.supabase.co/storage/v1/object/sign/xzeron_data/Sinigang_na_baboy.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MWZhM2E2OS1kODc3LTRlYTctYWRkYy1hN2E3Y2ZmM2YxNzAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ4emVyb25fZGF0YS9TaW5pZ2FuZ19uYV9iYWJveS5wbmciLCJpYXQiOjE3NTYyMTEzMTAsImV4cCI6MzE3MDg0Njc1MzEwfQ.TPlSHz9fsg3wvLQnLL4NGBIzLV77NsWNumfnKKBwkgc",
       description: "Traditional sour soup with pork and vegetables",
       featured: false
     },
@@ -25,7 +25,7 @@ const BestSellers = () => {
       id: 3,
       name: "Lechon Kawali",
       price: "₱450",
-      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "https://mdzljfhbkaxrhahqhmzz.supabase.co/storage/v1/object/sign/xzeron_data/lechon_kawali1.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MWZhM2E2OS1kODc3LTRlYTctYWRkYy1hN2E3Y2ZmM2YxNzAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ4emVyb25fZGF0YS9sZWNob25fa2F3YWxpMS5wbmciLCJpYXQiOjE3NTYyMTEyODcsImV4cCI6MzE3MDg0Njc1Mjg3fQ.2ac_wRxM1Sipmc_rB9jP6cN0QN4-4hcj-t7_wAk6MBQ",
       description: "Crispy fried pork belly with lechon sauce",
       featured: true
     },
@@ -33,7 +33,7 @@ const BestSellers = () => {
       id: 4,
       name: "Leche Flan",
       price: "₱150",
-      image: "https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "https://mdzljfhbkaxrhahqhmzz.supabase.co/storage/v1/object/sign/xzeron_data/leche_flan.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MWZhM2E2OS1kODc3LTRlYTctYWRkYy1hN2E3Y2ZmM2YxNzAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ4emVyb25fZGF0YS9sZWNoZV9mbGFuLnBuZyIsImlhdCI6MTc1NjIxMjMwNSwiZXhwIjo4ODE1NjEyNTkwNX0.kpM9Hucm5LlO-E1FmtHd8QDRQxr93F_oqHg8wenMZMI",
       description: "Smooth caramel custard with rich caramel sauce",
       featured: false
     }

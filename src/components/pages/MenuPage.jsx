@@ -21,7 +21,7 @@ const MenuPage = () => {
           id: 2,
           name: "Sinigang na Baboy",
           price: "₱350",
-          image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          image: "https://mdzljfhbkaxrhahqhmzz.supabase.co/storage/v1/object/sign/xzeron_data/Sinigang_na_baboy.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MWZhM2E2OS1kODc3LTRlYTctYWRkYy1hN2E3Y2ZmM2YxNzAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ4emVyb25fZGF0YS9TaW5pZ2FuZ19uYV9iYWJveS5wbmciLCJpYXQiOjE3NTYyMTEzMTAsImV4cCI6MzE3MDg0Njc1MzEwfQ.TPlSHz9fsg3wvLQnLL4NGBIzLV77NsWNumfnKKBwkgc",
           description: "Traditional sour soup with pork and vegetables",
           featured: false
         },
@@ -29,7 +29,7 @@ const MenuPage = () => {
           id: 3,
           name: "Crispy Pata",
           price: "₱650",
-          image: "https://images.pexels.com/photos/3926124/pexels-photo-3926124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          image: "https://mdzljfhbkaxrhahqhmzz.supabase.co/storage/v1/object/sign/xzeron_data/Crispy_pata.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MWZhM2E2OS1kODc3LTRlYTctYWRkYy1hN2E3Y2ZmM2YxNzAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ4emVyb25fZGF0YS9DcmlzcHlfcGF0YS5wbmciLCJpYXQiOjE3NTYyMTE1ODAsImV4cCI6MzE1NTMyNDY3NTU4MH0.Jor1Y53Quz6KHn44HnepAYTSp0znTnFKIXK4vfT_Hbw",
           description: "Deep-fried pig trotters served with a soy-vinegar dip.",
           featured: true
         },
@@ -37,7 +37,7 @@ const MenuPage = () => {
           id: 4,
           name: "Kare-Kare",
           price: "₱450",
-          image: "https://images.pexels.com/photos/3535383/pexels-photo-3535383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          image: "https://mdzljfhbkaxrhahqhmzz.supabase.co/storage/v1/object/sign/xzeron_data/Kare.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MWZhM2E2OS1kODc3LTRlYTctYWRkYy1hN2E3Y2ZmM2YxNzAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ4emVyb25fZGF0YS9LYXJlLnBuZyIsImlhdCI6MTc1NjIxMTY2NywiZXhwIjozMTcwODQ2NzU2Njd9.2IIRO47_qjCbAoX_GlsOVFhhcu8ob-HUQTq2MGniSV8",
           description: "A traditional Filipino stew with a rich and thick peanut sauce.",
           featured: false
         },
@@ -51,7 +51,7 @@ const MenuPage = () => {
           id: 5,
           name: "Crispy Lumpia",
           price: "₱150",
-          image: "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          image: "https://mdzljfhbkaxrhahqhmzz.supabase.co/storage/v1/object/sign/xzeron_data/Lumpia.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MWZhM2E2OS1kODc3LTRlYTctYWRkYy1hN2E3Y2ZmM2YxNzAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ4emVyb25fZGF0YS9MdW1waWEucG5nIiwiaWF0IjoxNzU2MjExODI3LCJleHAiOjMxNzA4NDY3NTgyN30.B7a6EkKUbXcanyNPKORnO6Hqr8-yS4J-e7LZsJFgIvU",
           description: "Fresh spring rolls with ground pork and vegetables",
           featured: true
         },
@@ -59,7 +59,7 @@ const MenuPage = () => {
           id: 6,
           name: "Tokwa't Baboy",
           price: "₱200",
-          image: "https://images.pexels.com/photos/1833333/pexels-photo-1833333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          image: "https://mdzljfhbkaxrhahqhmzz.supabase.co/storage/v1/object/sign/xzeron_data/tokwa.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MWZhM2E2OS1kODc3LTRlYTctYWRkYy1hN2E3Y2ZmM2YxNzAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ4emVyb25fZGF0YS90b2t3YS5wbmciLCJpYXQiOjE3NTYyMTIwNDcsImV4cCI6MzE3MDg0Njc2MDQ3fQ.CsBWYbtiuoehVhkZXtDA02w34AHPqjR3inQVhrqturY",
           description: "Fried tofu with pork ears in a soy sauce and vinegar dressing.",
           featured: false
         },
@@ -73,7 +73,7 @@ const MenuPage = () => {
           id: 7,
           name: "Bulalo",
           price: "₱550",
-          image: "https://images.pexels.com/photos/2773940/pexels-photo-2773940.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          image: "https://mdzljfhbkaxrhahqhmzz.supabase.co/storage/v1/object/sign/xzeron_data/bulalo.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MWZhM2E2OS1kODc3LTRlYTctYWRkYy1hN2E3Y2ZmM2YxNzAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ4emVyb25fZGF0YS9idWxhbG8ucG5nIiwiaWF0IjoxNzU2MjEyMjMwLCJleHAiOjMxNTUzMjQ2NzYyMzB9.hxvfZ0nOrJ_AMDGgwTG_QABkCDveD3WJaGJxpom8TXo",
           description: "A light-colored soup that is made by cooking beef shanks and bone marrow.",
           featured: false
         },
@@ -101,7 +101,7 @@ const MenuPage = () => {
           id: 9,
           name: "Leche Flan",
           price: "₱150",
-          image: "https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          image: "https://mdzljfhbkaxrhahqhmzz.supabase.co/storage/v1/object/sign/xzeron_data/leche_flan.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MWZhM2E2OS1kODc3LTRlYTctYWRkYy1hN2E3Y2ZmM2YxNzAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ4emVyb25fZGF0YS9sZWNoZV9mbGFuLnBuZyIsImlhdCI6MTc1NjIxMjMwNSwiZXhwIjo4ODE1NjEyNTkwNX0.kpM9Hucm5LlO-E1FmtHd8QDRQxr93F_oqHg8wenMZMI",
           description: "Smooth caramel custard with rich caramel sauce",
           featured: false
         },
