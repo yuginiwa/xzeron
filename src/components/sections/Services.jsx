@@ -10,21 +10,24 @@ const Services = () => {
       title: "Weddings",
       description: "Make your dream wedding unforgettable with our complete wedding packages, elegant setups, and exquisite cuisine",
       color: "text-gold-primary",
-      image: "https://mdzljfhbkaxrhahqhmzz.supabase.co/storage/v1/object/sign/xzeron_data/traditional+american+wedding-1920w.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MWZhM2E2OS1kODc3LTRlYTctYWRkYy1hN2E3Y2ZmM2YxNzAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ4emVyb25fZGF0YS90cmFkaXRpb25hbCthbWVyaWNhbit3ZWRkaW5nLTE5MjB3LndlYnAiLCJpYXQiOjE3NTYyMDA0NjgsImV4cCI6MzE1NTMyNDY2NDQ2OH0.uNo1Qs4dzUVqz73tQYJRtvV17Kraz-UOmSuaPmkMehg"
+      image: "https://mdzljfhbkaxrhahqhmzz.supabase.co/storage/v1/object/sign/xzeron_data/traditional+american+wedding-1920w.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MWZhM2E2OS1kODc3LTRlYTctYWRkYy1hN2E3Y2ZmM2YxNzAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ4emVyb25fZGF0YS90cmFkaXRpb25hbCthbWVyaWNhbit3ZWRkaW5nLTE5MjB3LndlYnAiLCJpYXQiOjE3NTYyMDA0NjgsImV4cCI6MzE1NTMyNDY2NDQ2OH0.uNo1Qs4dzUVqz73tQYJRtvV17Kraz-UOmSuaPmkMehg",
+      targetId: "weddings"
     },
     {
       icon: Crown,
       title: "Debuts",
       description: "Celebrate this milestone with sophisticated menus and stunning presentations that match the elegance of your debut",
       color: "text-gold-primary",
-      image: "https://mdzljfhbkaxrhahqhmzz.supabase.co/storage/v1/object/sign/xzeron_data/pexels-pexels-32333361.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MWZhM2E2OS1kODc3LTRlYTctYWRkYy1hN2E3Y2ZmM2YxNzAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ4emVyb25fZGF0YS9wZXhlbHMtcGV4ZWxzLTMyMzMzMzYxLmpwZyIsImlhdCI6MTc1NjIwMDQ5MiwiZXhwIjozMTUzNzcyNDY2NDQ5Mn0.zfo2TjRiQZHh1ILJ7oL4k5VYJuot-KbqQXgVMmarzHw"
+      image: "https://mdzljfhbkaxrhahqhmzz.supabase.co/storage/v1/object/sign/xzeron_data/pexels-pexels-32333361.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MWZhM2E2OS1kODc3LTRlYTctYWRkYy1hN2E3Y2ZmM2YxNzAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ4emVyb25fZGF0YS9wZXhlbHMtcGV4ZWxzLTMyMzMzMzYxLmpwZyIsImlhdCI6MTc1NjIwMDQ5MiwiZXhwIjozMTUzNzcyNDY2NDQ5Mn0.zfo2TjRiQZHh1ILJ7oL4k5VYJuot-KbqQXgVMmarzHw",
+      targetId: "debuts"
     },
     {
       icon: Cake,
       title: "Kiddie Parties",
       description: "Fun, colorful, and delicious – our kiddie packages bring joy to young hearts and peace of mind to parents",
       color: "text-gold-primary",
-      image: "https://mdzljfhbkaxrhahqhmzz.supabase.co/storage/v1/object/sign/xzeron_data/pexels-ivan-samkov-8104207.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MWZhM2E2OS1kODc3LTRlYTctYWRkYy1hN2E3Y2ZmM2YxNzAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ4emVyb25fZGF0YS9wZXhlbHMtaXZhbi1zYW1rb3YtODEwNDIwNy5qcGciLCJpYXQiOjE3NTYyMDA1MDcsImV4cCI6ODY1NzU2MTE0MTA3fQ.ngr4D3BbNgoqsJBHKA2hqiLFBJhqqO7HF-8xSTXceyo"
+      image: "https://mdzljfhbkaxrhahqhmzz.supabase.co/storage/v1/object/sign/xzeron_data/pexels-ivan-samkov-8104207.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV83MWZhM2E2OS1kODc3LTRlYTctYWRkYy1hN2E3Y2ZmM2YxNzAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ4emVyb25fZGF0YS9wZXhlbHMtaXZhbi1zYW1rb3YtODEwNDIwNy5qcGciLCJpYXQiOjE3NTYyMDA1MDcsImV4cCI6ODY1NzU2MTE0MTA3fQ.ngr4D3BbNgoqsJBHKA2hqiLFBJhqqO7HF-8xSTXceyo",
+      targetId: "kiddie-parties"
     }
   ]
 
@@ -60,13 +63,15 @@ const Services = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button 
-                  variant="outline" 
-                  className="border-gold-primary text-brown-primary hover:bg-gold-primary hover:text-white transition-colors"
-                >
-                  Learn More
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
+                <a href={`#${service.targetId}`}>
+                  <Button 
+                    variant="outline" 
+                    className="border-gold-primary text-brown-primary hover:bg-gold-primary hover:text-white transition-colors"
+                  >
+                    Learn More
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           ))}
@@ -74,13 +79,15 @@ const Services = () => {
 
         {/* View All Packages Link */}
         <div className="text-center">
-          <Button 
-            size="lg"
-            className="bg-gradient-to-r from-gold-primary to-gold-dark hover:from-gold-dark hover:to-brown-primary text-brown-primary px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
-          >
-            View All Packages
-            <ArrowRight className="w-5 h-5 ml-2" />
-          </Button>
+          <a href="#gallery">
+            <Button 
+              size="lg"
+              className="bg-gradient-to-r from-gold-primary to-gold-dark hover:from-gold-dark hover:to-brown-primary text-brown-primary px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              View All Packages
+              <ArrowRight className="w-5 h-5 ml-2" />
+            </Button>
+          </a>
         </div>
       </div>
     </section>

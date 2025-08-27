@@ -24,7 +24,7 @@ const AboutPage = () => {
               
               <p className="text-lg text-gray-800 leading-relaxed">
                 Xzeron Catering Services was born from a simple belief: every celebration deserves exceptional food and unforgettable experiences. 
-                We provide complete and customized catering solutions for every occasion, from intimate family gatherings to grand celebrations.
+                As a provider of professional catering in Cavite, we provide complete and customized catering solutions for every occasion, from intimate family gatherings to grand celebrations.
               </p>
               
               <p className="text-lg text-gray-800 leading-relaxed">

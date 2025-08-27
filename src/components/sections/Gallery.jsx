@@ -5,7 +5,7 @@ import { ArrowRight, Heart, Crown, Cake, CheckCircle } from 'lucide-react'
 const Gallery = () => {
   const packages = [
     {
-      id: 1,
+      id: "weddings",
       title: "Complete Wedding Package",
       subtitle: "Your Dream Wedding, Perfectly Catered",
       description: "Your wedding day should be magical, not stressful. Our complete wedding packages include everything you need for an unforgettable celebration – exquisite cuisine, elegant table settings, professional service staff, and seamless coordination.",
@@ -22,7 +22,7 @@ const Gallery = () => {
       imageFirst: false
     },
     {
-      id: 2,
+      id: "debuts",
       title: "Complete Debut Package",
       subtitle: "Celebrate Your 18th in Style",
       description: "Your debut marks the beginning of adulthood – make it extraordinary. Our complete debut packages combine sophisticated cuisine with elegant presentations that match the significance of this milestone.",
@@ -39,7 +39,7 @@ const Gallery = () => {
       imageFirst: true
     },
     {
-      id: 3,
+      id: "kiddie-parties",
       title: "Complete Kiddie Package",
       subtitle: "Fun, Colorful & Delicious Celebrations",
       description: "Children's parties should be magical experiences filled with joy, laughter, and delicious food. Our kiddie packages are specially designed with young guests in mind.",
@@ -70,7 +70,7 @@ const Gallery = () => {
         {/* Alternating Two-Column Layout */}
         <div className="space-y-20">
           {packages.map((pkg) => (
-            <div key={pkg.id} className={`grid lg:grid-cols-2 gap-12 items-center ${
+            <div id={pkg.id} key={pkg.id} className={`grid lg:grid-cols-2 gap-12 items-center ${
               pkg.imageFirst ? 'lg:grid-flow-col-dense' : ''
             }`}>
               
@@ -125,13 +125,15 @@ const Gallery = () => {
                   </div>
 
                   <div className="pt-4">
-                    <Button 
-                      size="lg"
-                      className="bg-gradient-to-r from-gold-primary to-gold-dark hover:from-gold-dark hover:to-brown-primary text-white px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
-                    >
-                      {pkg.cta}
-                      <ArrowRight className="w-5 h-5 ml-2" />
-                    </Button>
+                    <a href="#contact">
+                      <Button 
+                        size="lg"
+                        className="bg-gradient-to-r from-gold-primary to-gold-dark hover:from-gold-dark hover:to-brown-primary text-white px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                      >
+                        {pkg.cta}
+                        <ArrowRight className="w-5 h-5 ml-2" />
+                      </Button>
+                    </a>
                   </div>
                 </div>
               </div>

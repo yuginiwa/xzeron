@@ -98,13 +98,15 @@ const GalleryTeaser = () => {
 
         {/* View Gallery CTA */}
         <div className="text-center">
-          <Button 
-            size="lg"
-            className="bg-gradient-to-r from-gold-primary to-gold-dark hover:from-gold-dark hover:to-brown-primary text-white px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
-          >
-            View Gallery
-            <ArrowRight className="w-5 h-5 ml-2" />
-          </Button>
+          <a href="#gallery">
+            <Button 
+              size="lg"
+              className="bg-gradient-to-r from-gold-primary to-gold-dark hover:from-gold-dark hover:to-brown-primary text-white px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              View Gallery
+              <ArrowRight className="w-5 h-5 ml-2" />
+            </Button>
+          </a>
         </div>
       </div>
     </section>

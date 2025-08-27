@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button.jsx';
 import { ArrowRight, Calendar, Clock, User } from 'lucide-react';
 import { supabase } from '@/lib/supabaseClient';
 
-const Blog = () => {
+const BlogPage = () => {
   const [blogPosts, setBlogPosts] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
@@ -43,7 +43,7 @@ const Blog = () => {
     <section id="blog" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-brown-primary mb-4">The Xzeron Kitchen Chronicles</h2>
+          <h1 className="text-4xl font-bold text-brown-primary mb-4">The Xzeron Kitchen Chronicles</h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Tips, recipes, and insights from our culinary experts
           </p>
@@ -79,9 +79,9 @@ const Blog = () => {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-brown-primary mb-3 group-hover:text-gold-primary transition-colors leading-tight">
+                <h2 className="text-xl font-bold text-brown-primary mb-3 group-hover:text-gold-primary transition-colors leading-tight">
                   {post.title}
-                </h3>
+                </h2>
 
                 {/* Body */}
                 <div dangerouslySetInnerHTML={{ __html: post.body }} />
@@ -101,21 +101,9 @@ const Blog = () => {
             </div>
           ))}
         </div>
-
-        <div className="text-center">
-          <Link to="/blog">
-            <Button 
-              size="lg"
-              className="bg-gradient-to-r from-gold-primary to-gold-dark hover:from-gold-dark hover:to-brown-primary text-white px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              Read Our Blog
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </Button>
-          </Link>
-        </div>
       </div>
     </section>
   )
 }
 
-export default Blog
+export default BlogPage
